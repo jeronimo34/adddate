@@ -48,7 +48,7 @@ export default {
   },
   watch: {
     date: function(newvalue, oldvalue){
-      let text = this.formatDate(newvalue)+"の"+this.adddate+"日後は"+this.addDate(newvalue, this.addDate);
+      let text = this.formatDate(newvalue)+"の"+this.adddate+"日後は"+this.addDate(newvalue, this.adddate);
       this.addHistory(text);
     }
   }
