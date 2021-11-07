@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@popperjs/core": "^2.10.2",
@@ -15,5 +16,7 @@
     "nuxt": "^2.15.7",
     "vuejs-datepicker": "^1.6.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
 }

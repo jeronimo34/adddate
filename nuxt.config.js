@@ -5,6 +5,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // GitHub Pagesにデプロイしたとき正常に動作させるための設定
+  router: {
+    base: '/adddate/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'adddate',
@@ -28,7 +32,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/vuejs-datepicker.js', mode: 'client', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
